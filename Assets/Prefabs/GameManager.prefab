@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7666999778363222871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7666999778363222869}
+  - component: {fileID: 407520756}
+  - component: {fileID: 53396787}
+  - component: {fileID: 9063551615861406800}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: GameState
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7666999778363222869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7666999778363222871}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.573734, y: -7.492009, z: 3.1301637}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &407520756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7666999778363222871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff957d61a2304d4eb2b4682d8dfe309, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentPos: {fileID: 0}
+  gameStateController: {fileID: 9063551615861406800}
+  playerManager: {fileID: 0}
+  canCreate: 1
+  levels: []
+--- !u!114 &53396787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7666999778363222871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06a4696f59d402e4c9d07df398139513, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelList:
+  - levelName: Level1
+    curLevel: 0
+    mapModelList:
+    - {fileID: 6681413218522843018, guid: d19567ec201f7bc4eab702febe53392a, type: 3}
+    - {fileID: 5281616535130582720, guid: 8931a2e50e4afd449b6d240fc367ef81, type: 3}
+    - {fileID: 651532493580585905, guid: 75202a2bfb43f3f44a4764d880eed74f, type: 3}
+    - {fileID: 3084980527071577945, guid: 09596207fa02fc049b6ea69069bc66bc, type: 3}
+    - {fileID: 3484530031558158086, guid: 0899de39388f12f43adc99b04f670ef7, type: 3}
+    - {fileID: 4777880524146529168, guid: 1d855e5a998c38247bda6ea4e832a1f1, type: 3}
+    - {fileID: 5810872780915521692, guid: 768fe55c96e9f6c41a676e02bafba8af, type: 3}
+    - {fileID: 1729003306840564629, guid: 7f3e0cc1ab303404ea0438d671d9e2cc, type: 3}
+  - levelName: Level2
+    curLevel: 1
+    mapModelList:
+    - {fileID: 6681413218522843018, guid: d19567ec201f7bc4eab702febe53392a, type: 3}
+    - {fileID: 8782207373905985117, guid: b8a8caef8f1b8a84a91e823a2930b9b1, type: 3}
+    - {fileID: 651532493580585905, guid: 75202a2bfb43f3f44a4764d880eed74f, type: 3}
+    - {fileID: 5197001922153685354, guid: 67c22c34315f3a94daf3198551542cec, type: 3}
+    - {fileID: 5197001922153685354, guid: 67c22c34315f3a94daf3198551542cec, type: 3}
+    - {fileID: 651532493580585905, guid: 75202a2bfb43f3f44a4764d880eed74f, type: 3}
+    - {fileID: 8782207373905985117, guid: b8a8caef8f1b8a84a91e823a2930b9b1, type: 3}
+    - {fileID: 1729003306840564629, guid: 7f3e0cc1ab303404ea0438d671d9e2cc, type: 3}
+  - levelName: Level3
+    curLevel: 2
+    mapModelList:
+    - {fileID: 6681413218522843018, guid: d19567ec201f7bc4eab702febe53392a, type: 3}
+    - {fileID: 8782207373905985117, guid: b8a8caef8f1b8a84a91e823a2930b9b1, type: 3}
+    - {fileID: 5197001922153685354, guid: 67c22c34315f3a94daf3198551542cec, type: 3}
+    - {fileID: 1729003306840564629, guid: 7f3e0cc1ab303404ea0438d671d9e2cc, type: 3}
+  curLevel: 0
+  canLoadLevel: 0
+--- !u!114 &9063551615861406800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7666999778363222871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc804c0a13ec474585619962c5c7288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerManager: {fileID: 0}
+  playerPrefab: {fileID: 8353076859603305735, guid: 77d42372cf1e4f14b9695bd543366b4e, type: 3}
+  spawnPoint: {fileID: 0}
+  gameState: 0
